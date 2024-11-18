@@ -79,6 +79,66 @@ const be_stack = [
     icon: 'java',
     href: 'https://www.java.com',
   },
+  {
+    text: 'SpringBoot',
+    icon: 'springboot',
+    href: 'https://spring.io/projects/spring-boot',
+  },
+];
+
+const cloud_stack = [
+  {
+    text: 'AWS',
+    icon: 'aws',
+    href: 'https://aws.amazon.com',
+  },
+  {
+    text: 'Cloudflare',
+    icon: 'cloudflare',
+    href: 'https://www.cloudflare.com',
+  },
+  { text: 'Heroku', icon: 'heroku', href: 'https://www.heroku.com' },
+  {
+    text: 'Vercel',
+    icon: 'vercel',
+    href: 'https://vercel.com',
+  },
+  { text: 'Linux', icon: 'linux', href: 'https://www.linux.org' },
+  { text: 'Docker', icon: 'docker', href: 'https://www.docker.com' },
+  { text: 'FreeBSD', icon: 'freebsd', href: 'https://freebsd.org' },
+  {
+    text: 'Firebase',
+    icon: 'firebase',
+    href: 'https://firebase.google.com',
+  },
+];
+
+const storage_stack = [
+  {
+    text: 'MySQL',
+    icon: 'mysql',
+    href: 'https://www.mysql.com',
+  },
+  {
+    text: 'PostgreSQL',
+    icon: 'postgresql',
+    href: 'https://www.postgresql.org',
+  },
+  {
+    text: 'MongoDB',
+    icon: 'mongodb',
+    href: 'https://www.mongodb.com',
+  },
+  {
+    text: 'S3',
+    icon: 'aws',
+    href: 'https://aws.amazon.com/s3',
+  },
+  {
+    text: 'SQLite',
+    icon: 'sqlite',
+    href: 'https://www.sqlite.org',
+  },
 ];
 ---
 
@@ -230,6 +290,22 @@ const be_stack = [
           <div class="flex flex-wrap items-center gap-2 mt-5">
             {
               be_stack.map((item) => (
+                <StackCard text={item.text} icon={item.icon} href={item.href} />
+              ))
+            }
+          </div>
+          <p>Cloud Service</p>
+          <div class="flex flex-wrap items-center gap-2 mt-5">
+            {
+              cloud_stack.map((item) => (
+                <StackCard text={item.text} icon={item.icon} href={item.href} />
+              ))
+            }
+          </div>
+          <p>Dababase & Storage</p>
+          <div class="flex flex-wrap items-center gap-2 mt-5">
+            {
+              storage_stack.map((item) => (
                 <StackCard text={item.text} icon={item.icon} href={item.href} />
               ))
             }
