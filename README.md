@@ -7,6 +7,7 @@ This is a portfolio website that I created to showcase my projects, skills, work
 - HTML
 - CSS
 - JavaScript
+- TypeScript
 - Astro
 - tailwindcss
 
