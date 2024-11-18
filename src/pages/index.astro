@@ -1,8 +1,85 @@
 ---
 import PageLayout from '@layouts/PageLayout.astro';
+import StackCard from '@components/StackCard.astro';
 import { SITE, SOCIALS } from '@consts';
 import TwinklingStars from '@components/TwinklingStars.astro';
 import MeteorShower from '@components/MeteorShower.astro';
+
+const fe_stack = [
+  {
+    text: 'React',
+    icon: 'react',
+    href: 'https://reactjs.org',
+  },
+  {
+    text: 'Astro',
+    icon: 'astro',
+    href: 'https://astro.build',
+  },
+  {
+    text: 'Javascript',
+    icon: 'javascript',
+    href: 'https://www.javascript.com',
+  },
+  {
+    text: 'Typescript',
+    icon: 'typescript',
+    href: 'https://www.typescriptlang.org',
+  },
+  {
+    text: 'Tailwind',
+    icon: 'tailwind',
+    href: 'https://tailwindcss.com',
+  },
+  {
+    text: 'Bootstrap',
+    icon: 'bootstrap',
+    href: 'https://getbootstrap.com',
+  },
+  {
+    text: 'HTML5',
+    icon: 'html5',
+    href: 'https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5',
+  },
+  {
+    text: 'CSS',
+    icon: 'css',
+    href: 'https://developer.mozilla.org/en-US/docs/Web/CSS',
+  },
+];
+
+const be_stack = [
+  {
+    text: 'Node.js',
+    icon: 'nodejs',
+    href: 'https://nodejs.org',
+  },
+  {
+    text: 'Express',
+    icon: 'express',
+    href: 'https://expressjs.com',
+  },
+  {
+    text: 'Deno',
+    icon: 'deno',
+    href: 'https://deno.land',
+  },
+  {
+    text: 'Python',
+    icon: 'python',
+    href: 'https://www.python.org',
+  },
+  {
+    text: 'Flask',
+    icon: 'flask',
+    href: 'https://flask.palletsprojects.com',
+  },
+  {
+    text: 'Java',
+    icon: 'java',
+    href: 'https://www.java.com',
+  },
+];
 ---
 
 <PageLayout title="Home" description={SITE.DESCRIPTION}>
@@ -133,6 +210,31 @@ import MeteorShower from '@components/MeteorShower.astro';
             interesting things I could do.
           </p>
         </article>
+      </section>
+
+      <!-- Tech Stack Section -->
+      <section class="animate">
+        <div class="space-y-4">
+          <p class="font-semibold text-black dark:text-white">
+            The technologies I use
+          </p>
+          <p>Frontend</p>
+          <div class="flex flex-wrap items-center gap-2 mt-5">
+            {
+              fe_stack.map((item) => (
+                <StackCard text={item.text} icon={item.icon} href={item.href} />
+              ))
+            }
+          </div>
+          <p>Backend</p>
+          <div class="flex flex-wrap items-center gap-2 mt-5">
+            {
+              be_stack.map((item) => (
+                <StackCard text={item.text} icon={item.icon} href={item.href} />
+              ))
+            }
+          </div>
+        </div>
       </section>
     </div>
   </div>
