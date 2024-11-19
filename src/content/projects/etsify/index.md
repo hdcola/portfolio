@@ -35,6 +35,6 @@ CI/CD:
 - Jest and supertest for testing
 - Backend test coverage: [71.85%](https://app.codecov.io/gh/hdcola/etsifyapi) 
 
-![Etsify](./etsify.jpeg)
+![Etsify](./etsify.jpg)
 
   
