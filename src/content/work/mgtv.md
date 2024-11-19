@@ -12,3 +12,4 @@ I was responsible for the product, technology, and user growth of an online stre
 - Transformed the advertising platform to generate monthly ad revenue exceeding 100 million RMB from zero.
 - Improved platform availability from less than 90% to 99.9%.
 - Reduced per-user service costs by 20 times.
+- Built the largest Chinese-language channel on YouTube from scratch.

@@ -19,14 +19,31 @@ const work = await Promise.all(
   })
 );
 
-function formatWorkDate(input: Date | string) {
-  if (typeof input === 'string') return input;
+function formatWorkDate(input: Date | string): string {
+  const date = typeof input === 'string' ? new Date(input) : input;
 
-  const month = input.toLocaleDateString('en-US', {
-    month: 'short',
-  });
+  if (isNaN(date.getTime())) {
+    // 如果日期无效，直接返回输入的字符串形式
+    return typeof input === 'string' ? input : input.toString();
+  }
 
-  const year = new Date(input).getFullYear();
+  const months = [
+    'JAN',
+    'FEB',
+    'MAR',
+    'APR',
+    'MAY',
+    'JUN',
+    'JUL',
+    'AUG',
+    'SEP',
+    'OCT',
+    'NOV',
+    'DEC',
+  ];
+  const month = months[date.getMonth()];
+  const year = date.getFullYear();
+
   return `${month} ${year}`;
 }
 ---
