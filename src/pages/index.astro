@@ -46,6 +46,11 @@ const fe_stack = [
     icon: 'css',
     href: 'https://developer.mozilla.org/en-US/docs/Web/CSS',
   },
+  {
+    text: 'SwiftUI',
+    icon: 'swift',
+    href: 'https://developer.apple.com/xcode/swiftui',
+  }
 ];
 
 const be_stack = [
@@ -83,7 +88,7 @@ const be_stack = [
     text: 'SpringBoot',
     icon: 'springboot',
     href: 'https://spring.io/projects/spring-boot',
-  },
+  }
 ];
 
 const cloud_stack = [
@@ -139,6 +144,34 @@ const storage_stack = [
     icon: 'sqlite',
     href: 'https://www.sqlite.org',
   },
+];
+
+const api_stack = [
+  {
+    text: 'OpenAI',
+    icon: 'openai',
+    href: 'https://www.openai.com',
+  },
+  {
+    text: 'Ollama',
+    icon: 'ollama',
+    href: 'https://www.ollama.com',
+  },
+  {
+    text: 'stripe',
+    icon: 'stripe',
+    href: 'https://stripe.com',
+  },
+  {
+    text: 'QuickBooks Online',
+    icon: 'quickbooks',
+    href: 'https://quickbooks.intuit.com',
+  },
+  {
+    text: 'Telegram',
+    icon: 'telegram',
+    href: 'https://telegram.org',
+  }
 ];
 ---
 
@@ -306,6 +339,14 @@ const storage_stack = [
           <div class="flex flex-wrap items-center gap-2 mt-5">
             {
               storage_stack.map((item) => (
+                <StackCard text={item.text} icon={item.icon} href={item.href} />
+              ))
+            }
+          </div>
+          <p>API Integration</p>
+          <div class="flex flex-wrap items-center gap-2 mt-5">
+            {
+              api_stack.map((item) => (
                 <StackCard text={item.text} icon={item.icon} href={item.href} />
               ))
             }
