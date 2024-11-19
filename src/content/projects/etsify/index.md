@@ -1,7 +1,7 @@
 ---
 title: "Etsify"
 summary: "This one-and-a-half-week team project created a basic online marketplace with user registration, shopping cart, and Stripe checkout."
-date: "Nov 18 2024"
+date: "Nov 1 2024"
 draft: false
 tags:
 - React
