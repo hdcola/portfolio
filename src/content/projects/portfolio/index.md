@@ -13,4 +13,4 @@ demoUrl: https://portfolio.hdcola.org
 repoUrl: https://github.com/hdcola/portfolio
 ---
 
-This is my personal portfolio website built with Astro, Tailwind CSS, and SolidJs. It is a static site generated with Astro and hosted on cloud. The site is fully responsive and optimized for performance. The source code is available on GitHub.
+This is my personal portfolio website built with Astro, Tailwind CSS, and SolidJs. It is a static site generated with Astro and hosted on Cloudflare. The site is fully responsive and optimized for performance. The source code is available on GitHub.
