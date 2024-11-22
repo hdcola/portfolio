@@ -8,7 +8,7 @@ tags:
 - Telegram Bot API
 - Docker
 - SQLite
-repoUrl: https://github.com/hdcola/etsifyweb
+repoUrl: https://github.com/hdcola/Edge-GPT-Telegram-Bot
 ---
 
 This Telegram bot utilizes the unofficial EdgeGPT API to engage in text and voice conversations with users. The bot can reply to text messages and voice messages, and can also generate text messages based on user input. The bot is deployed in a container and uses SQLite to store user data. The bot is written in Python and uses the Telegram Bot API to communicate with users. The bot is also containerized using Docker. Users can even choose the tone and language of the voice. The funniest part is when you have a person from Northeast China speaking English with a comedic twist, which makes it impossible to stop.
