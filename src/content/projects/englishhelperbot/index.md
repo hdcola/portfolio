@@ -1,6 +1,6 @@
 ---
 title: "English Helper Bot"
-summary: "This Telegram bot uses the unofficial EdgeGPT API to help users with text and voice-based conversations."
+summary: "A Telegram bot for learning English"
 date: "Nov 7 2021"
 draft: false
 tags:
@@ -8,7 +8,7 @@ tags:
 - Telegram Bot API
 - Docker
 - SQLite
-repoUrl: https://github.com/hdcola/Edge-GPT-Telegram-Bot
+repoUrl: https://github.com/HDCodePractice/EnglishHelper
 ---
 
 This is a Telegram bot for me and my friends to practice English. It has accompanied me from learning ABCs to being able to speak with people. It uses the phonetic database from [The CMU Pronouncing Dictionary] and the word relationship data from [WordNet](http://wordnet.princeton.edu/). It can help you learn English through a chatbot with the following main features:
@@ -28,5 +28,6 @@ This is a Telegram bot for me and my friends to practice English. It has accompa
 * Supports uploading your own graphic dictionary
 * Supports words with multiple meanings in one graphic
 * Supports a word appearing in multiple graphics
+
 
 ![English Helper Bot](./englishhelperbot.jpg)
