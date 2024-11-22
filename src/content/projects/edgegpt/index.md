@@ -1,7 +1,7 @@
 ---
 title: "Edge-GPT-Telegram-Bot"
 summary: "This Telegram robot utilizes the unofficial EdgeGPT API to facilitate text and voice-based conversations with users."
-date: "Nov 1 2024"
+date: "MAR 24 2023"
 draft: false
 tags:
 - Python
