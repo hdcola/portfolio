@@ -13,6 +13,7 @@ tags:
 - Google Auth
 - AWS S3
 - AWS RDS
+- CI/CD
 demoUrl: https://etsify.hdcola.org
 repoUrl: https://github.com/hdcola/etsifyweb
 ---
