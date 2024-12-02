@@ -10,7 +10,8 @@ tags:
 - Ollama
 - Docker
 - MongoDB
-repoUrl: https://github.com/HDCodePractice/TranslateView
+demoUrl: https://t.me/s/voiceofcanadanew
+repoUrl: https://github.com/hdcola/VOCNews
 ---
 
 It's a Telegram channel that uses AI to help Chinese people read local Canadian news. The AI is used to translate and organize the news to be rearranged and posted on Telegraph and read via Telegram.
