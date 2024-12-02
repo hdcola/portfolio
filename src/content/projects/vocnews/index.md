@@ -24,12 +24,11 @@ Features:
 - Use OpenAI or Ollama to translate the news
 
 Technologies:
-- Python
+- Python, PDM, pytest
 - Telegram Bot API
 - OpenAI API
 - Ollama local LLM
-- Docker
-- Enroot
+- Docker & Enroot
 - Telegraph
 - MongoDB
 - Doppler
