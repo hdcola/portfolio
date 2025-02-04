@@ -8,7 +8,7 @@ tags:
 - Tailwind
 - React
 - Cloudflare
-demoUrl: https://mtlove.pages.dev
+demoUrl: https://mtlove.hdcola.org
 repoUrl: https://github.com/hdcola/mtlove
 ---
 
