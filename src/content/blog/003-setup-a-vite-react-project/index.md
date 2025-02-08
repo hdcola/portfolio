@@ -33,7 +33,7 @@ Before you begin, ensure you have the following installed:
 *   **A Package Manager**: npm (comes with Node.js), yarn ([https://yarnpkg.com/](https://yarnpkg.com/)), or pnpm ([https://pnpm.io/](https://pnpm.io/)). This guide will use `pnpm`.
     *   **Installation using npm**: If you have Node.js installed, you can install pnpm using npm:
         ```bash
-        npm install -g pnpm
+        brew install pnpm
         ```
 
 ## Initializing a Vite React Project
