@@ -139,7 +139,12 @@ During your development process, you will commonly use the following commands:
 
 ## Tailwind CSS Configuration Steps
 
-[Tailwind CSS](https://tailwindcss.com/docs/installation/using-vite) is a utility-first CSS framework that can be easily integrated into your Vite React project. Follow these steps to set up Tailwind CSS:
+[Tailwind CSS](https://tailwindcss.com/docs/installation/using-vite) is a utility-first CSS framework that can be easily integrated into your Vite React project. 
+
+
+### Tailwind CSS v3.x Installation
+
+Follow these steps to set up Tailwind CSS:
 
 1.  Install Tailwind CSS and its related dependencies (if not already installed):
     ```bash
@@ -156,16 +161,41 @@ During your development process, you will commonly use the following commands:
     @tailwind utilities;
     ```
 4.  Modify `tailwind.config.js` as needed to customize the configuration.
-5.  Update the `tailwind.config.js` content configuration to ensure Tailwind can scan all relevant files to purge unused styles:
     ```js
-    // Example tailwind.config.js
-    module.exports = {
-      content: ["./index.html", "./src/**/*.{js,jsx,ts,tsx}"],
-      theme: {
+    /** @type {import('tailwindcss').Config} */
+    export default {
+    content: [
+        "./index.html",
+        "./src/**/*.{js,ts,jsx,tsx}",
+    ],
+    theme: {
         extend: {},
-      },
-      plugins: [],
+    },
+    plugins: [],
     }
+    ```
+
+### Tailwind CSS v4.x Installation
+
+Follow these steps to set up Tailwind CSS:
+
+1. Install Tailwind CSS and its related dependencies (if not already installed):
+    ```bash
+    pnpm add -D ttailwindcss @tailwindcss/vite
+    ```
+2. Configure the Vite plugin in your `vite.config.js` file:
+    ```js
+    import { defineConfig } from 'vite'
+    import tailwindcss from '@tailwindcss/vite'
+    export default defineConfig({
+    plugins: [
+        tailwindcss(),
+    ],
+    })
+    ```
+3. Add the following directives to your project's CSS file (e.g., src/index.css):
+    ```css
+    @import "tailwindcss";
     ```
 
 ## Common Libraries and Installation
