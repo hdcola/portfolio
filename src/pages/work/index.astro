@@ -7,10 +7,13 @@ import { WORK } from '@consts';
 
 const collection = await getCollection('work');
 
-collection.sort(
-  (a, b) =>
-    new Date(b.data.dateStart).getTime() - new Date(a.data.dateStart).getTime()
-);
+collection.sort((a, b) => {
+  const dateA =
+    b.data.dateEnd === 'Now' ? new Date() : new Date(b.data.dateEnd);
+  const dateB =
+    a.data.dateEnd === 'Now' ? new Date() : new Date(a.data.dateEnd);
+  return dateA.getTime() - dateB.getTime();
+});
 
 const work = await Promise.all(
   collection.map(async (item) => {
